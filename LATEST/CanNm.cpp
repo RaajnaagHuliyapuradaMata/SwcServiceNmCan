@@ -43,7 +43,7 @@ class module_CanNm:
 /******************************************************************************/
             Std_TypeReturn          IsInitDone{E_NOT_OK};
       const CfgModule_TypeAbstract* lptrCfg{(CfgModule_TypeAbstract*)NULL_PTR};
-            infPduRClient_Lo        infPduRClient_CanNm;
+            infPduRClient_Up        infPduRClient_CanNm;
 
    public:
       module_CanNm(Std_TypeVersionInfo lVersionInfo) : abstract_module(lVersionInfo){
