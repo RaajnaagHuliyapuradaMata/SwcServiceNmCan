@@ -131,7 +131,9 @@ FUNC(void, CANNM_CODE) module_CanNm::InitFunction(
 #endif
 }
 
-FUNC(void, CANNM_CODE) module_CanNm::DeInitFunction(void){
+FUNC(void, CANNM_CODE) module_CanNm::DeInitFunction(
+   void
+){
 #if(STD_ON == CanNm_InitCheck)
    if(
          E_OK
@@ -154,7 +156,9 @@ FUNC(void, CANNM_CODE) module_CanNm::DeInitFunction(void){
 #endif
 }
 
-FUNC(void, CANNM_CODE) module_CanNm::MainFunction(void){
+FUNC(void, CANNM_CODE) module_CanNm::MainFunction(
+   void
+){
 #if(STD_ON == CanNm_InitCheck)
    if(
          E_OK
@@ -176,7 +180,9 @@ FUNC(void, CANNM_CODE) module_CanNm::MainFunction(void){
 #endif
 }
 
-FUNC(void, CANNM_CODE) module_CanNm::dummy(void){
+FUNC(void, CANNM_CODE) module_CanNm::dummy(
+   void
+){
 }
 
 /******************************************************************************/
