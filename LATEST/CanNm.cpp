@@ -41,13 +41,9 @@ class module_CanNm:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-            Std_TypeReturn          IsInitDone{E_NOT_OK};
-      const CfgModule_TypeAbstract* lptrCfg{(CfgModule_TypeAbstract*)NULL_PTR};
             infPduRClient_Up        infPduRClient_CanNm;
 
    public:
-      module_CanNm(Std_TypeVersionInfo lVersionInfo) : abstract_module(lVersionInfo){
-      }
       FUNC(void, CANNM_CODE) InitFunction(
          CONSTP2CONST(CfgModule_TypeAbstract, CANNM_CONFIG_DATA, CANNM_APPL_CONST) lptrCfgModule
       );
@@ -72,18 +68,7 @@ CONSTP2VAR(infSchMClient, CANNM_VAR, CANNM_CONST) gptrinfSchMClient_CanNm = &Can
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_CanNm, CANNM_VAR) CanNm(
-   {
-         CANNM_AR_RELEASE_VERSION_MAJOR
-      ,  CANNM_AR_RELEASE_VERSION_MINOR
-      ,  0x00
-      ,  0xFF
-      ,  0x01
-      ,  '0'
-      ,  '1'
-      ,  '0'
-   }
-);
+VAR(module_CanNm, CANNM_VAR) CanNm;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
