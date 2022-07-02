@@ -83,12 +83,7 @@ FUNC(void, CANNM_CODE) module_CanNm::InitFunction(
    ){
 #endif
       if(NULL_PTR != lptrCfgModule){
-         if(STD_HIGH){
-            lptrCfg = lptrCfgModule;
-         }
-         else{
-            lptrCfg = &PBcfgCanNm;
-         }
+         lptrCfg = lptrCfgModule;
       }
       else{
 #if(STD_ON == CanNm_DevErrorDetect)
