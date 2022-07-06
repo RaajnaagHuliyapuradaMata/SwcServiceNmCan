@@ -7,9 +7,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "Module.hpp"
-#include "CfgCanNm.hpp"
-#include "CanNm_core.hpp"
-#include "infCanNm_Exp.hpp"
+#include "CanNm.hpp"
 #include "infCanNm_Imp.hpp"
 
 /******************************************************************************/
@@ -32,27 +30,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class module_CanNm:
-      INTERFACES_EXPORTED_CANNM
-      public abstract_module
-   ,  public class_CanNm_Functionality
-{
-   private:
-/******************************************************************************/
-/* OBJECTS                                                                    */
-/******************************************************************************/
-            infPduRClient_Up        infPduRClient_CanNm;
-
-   public:
-      FUNC(void, CANNM_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, CANNM_CONFIG_DATA, CANNM_APPL_CONST) lptrCfgModule
-      );
-      FUNC(void, CANNM_CODE) DeInitFunction (void);
-      FUNC(void, CANNM_CODE) MainFunction   (void);
-      CANNM_CORE_FUNCTIONALITIES
-};
-
-extern VAR(module_CanNm, CANNM_VAR) CanNm;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
