@@ -8,9 +8,7 @@
 /* #INCLUDES                                                                  */
 /******************************************************************************/
 #include "infCanNm_EcuM.hpp"
-#include "infCanNm_Dcm.hpp"
 #include "infCanNm_Det.hpp"
-#include "infCanNm_SchM.hpp"
 #include "infPduRClient_Up.hpp"
 
 /******************************************************************************/
