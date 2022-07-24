@@ -7,6 +7,7 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "ConstCanNm.hpp"
 #include "CfgCanNm.hpp"
 #include "CanNm_core.hpp"
 #include "infCanNm_Exp.hpp"
@@ -31,6 +32,7 @@ class module_CanNm:
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
+      const ConstCanNm_Type* lptrConst = (ConstCanNm_Type*)NULL_PTR;
       infPduRClient_Up infPduRClient_CanNm;
 
    public:
@@ -38,7 +40,8 @@ class module_CanNm:
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
       FUNC(void, CANNM_CODE) InitFunction(
-         CONSTP2CONST(CfgModule_TypeAbstract, CANNM_CONFIG_DATA, CANNM_APPL_CONST) lptrCfgModule
+            CONSTP2CONST(ConstModule_TypeAbstract, CANNM_CONST,       CANNM_APPL_CONST) lptrConstModule
+         ,  CONSTP2CONST(CfgModule_TypeAbstract,   CANNM_CONFIG_DATA, CANNM_APPL_CONST) lptrCfgModule
       );
       FUNC(void, CANNM_CODE) DeInitFunction (void);
       FUNC(void, CANNM_CODE) MainFunction   (void);

@@ -48,7 +48,8 @@ VAR(module_CanNm, CANNM_VAR) CanNm;
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
 FUNC(void, CANNM_CODE) module_CanNm::InitFunction(
-   CONSTP2CONST(CfgModule_TypeAbstract, CANNM_CONFIG_DATA, CANNM_APPL_CONST) lptrCfgModule
+      CONSTP2CONST(ConstModule_TypeAbstract, CANNM_CONST,       CANNM_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   CANNM_CONFIG_DATA, CANNM_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == CanNm_InitCheck)
    if(
@@ -56,8 +57,12 @@ FUNC(void, CANNM_CODE) module_CanNm::InitFunction(
       != IsInitDone
    ){
 #endif
-      if(NULL_PTR != lptrCfgModule){
-         lptrCfg = lptrCfgModule;
+      if(
+            (NULL_PTR != lptrConstModule)
+         && (NULL_PTR != lptrCfgModule)
+      ){
+         lptrConst = lptrConstModule;
+         lptrCfg   = lptrCfgModule;
       }
       else{
 #if(STD_ON == CanNm_DevErrorDetect)
