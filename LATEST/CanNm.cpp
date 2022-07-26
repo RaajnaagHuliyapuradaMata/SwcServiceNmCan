@@ -61,7 +61,7 @@ FUNC(void, CANNM_CODE) module_CanNm::InitFunction(
             (NULL_PTR != lptrConstModule)
          && (NULL_PTR != lptrCfgModule)
       ){
-         lptrConst = lptrConstModule;
+         lptrConst = (const ConstCanNm_Type*)lptrConstModule;
          lptrCfg   = lptrCfgModule;
       }
       else{
