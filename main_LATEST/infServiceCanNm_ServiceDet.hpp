@@ -21,7 +21,7 @@
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
 typedef enum{
-      CANNM_E_UNINIT
+      SERVICECANNM_E_UNINIT
 }ServiceCanNm_TypeServiceDetErrorCode;
 
 /******************************************************************************/

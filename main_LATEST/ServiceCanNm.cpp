@@ -13,18 +13,18 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CANNM_AR_RELEASE_VERSION_MAJOR                                         4
-#define CANNM_AR_RELEASE_VERSION_MINOR                                         3
+#define SERVICECANNM_AR_RELEASE_VERSION_MAJOR                                         4
+#define SERVICECANNM_AR_RELEASE_VERSION_MINOR                                         3
 
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#if(CANNM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
-   #error "Incompatible CANNM_AR_RELEASE_VERSION_MAJOR!"
+#if(SERVICECANNM_AR_RELEASE_VERSION_MAJOR != STD_AR_RELEASE_VERSION_MAJOR)
+   #error "Incompatible SERVICECANNM_AR_RELEASE_VERSION_MAJOR!"
 #endif
 
-#if(CANNM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
-   #error "Incompatible CANNM_AR_RELEASE_VERSION_MINOR!"
+#if(SERVICECANNM_AR_RELEASE_VERSION_MINOR != STD_AR_RELEASE_VERSION_MINOR)
+   #error "Incompatible SERVICECANNM_AR_RELEASE_VERSION_MINOR!"
 #endif
 
 /******************************************************************************/
@@ -42,14 +42,14 @@
 /******************************************************************************/
 /* OBJECTS                                                                    */
 /******************************************************************************/
-VAR(module_ServiceCanNm, CANNM_VAR) ServiceCanNm;
+VAR(module_ServiceCanNm, SERVICECANNM_VAR) ServiceCanNm;
 
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-FUNC(void, CANNM_CODE) module_ServiceCanNm::InitFunction(
-      CONSTP2CONST(ConstModule_TypeAbstract, CANNM_CONST,       CANNM_APPL_CONST) lptrConstModule
-   ,  CONSTP2CONST(CfgModule_TypeAbstract,   CANNM_CONFIG_DATA, CANNM_APPL_CONST) lptrCfgModule
+FUNC(void, SERVICECANNM_CODE) module_ServiceCanNm::InitFunction(
+      CONSTP2CONST(ConstModule_TypeAbstract, SERVICECANNM_CONST,       SERVICECANNM_APPL_CONST) lptrConstModule
+   ,  CONSTP2CONST(CfgModule_TypeAbstract,   SERVICECANNM_CONFIG_DATA, SERVICECANNM_APPL_CONST) lptrCfgModule
 ){
 #if(STD_ON == ServiceCanNm_InitCheck)
    if(
@@ -83,14 +83,14 @@ FUNC(void, CANNM_CODE) module_ServiceCanNm::InitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  CANNM_E_UNINIT
+         ,  SERVICECANNM_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, CANNM_CODE) module_ServiceCanNm::DeInitFunction(
+FUNC(void, SERVICECANNM_CODE) module_ServiceCanNm::DeInitFunction(
    void
 ){
 #if(STD_ON == ServiceCanNm_InitCheck)
@@ -108,14 +108,14 @@ FUNC(void, CANNM_CODE) module_ServiceCanNm::DeInitFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  CANNM_E_UNINIT
+         ,  SERVICECANNM_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, CANNM_CODE) module_ServiceCanNm::MainFunction(
+FUNC(void, SERVICECANNM_CODE) module_ServiceCanNm::MainFunction(
    void
 ){
 #if(STD_ON == ServiceCanNm_InitCheck)
@@ -132,14 +132,14 @@ FUNC(void, CANNM_CODE) module_ServiceCanNm::MainFunction(
             0 //TBD: IdModule
          ,  0 //TBD: IdInstance
          ,  0 //TBD: IdApi
-         ,  CANNM_E_UNINIT
+         ,  SERVICECANNM_E_UNINIT
       );
 #endif
    }
 #endif
 }
 
-FUNC(void, CANNM_CODE) module_ServiceCanNm::dummy(
+FUNC(void, SERVICECANNM_CODE) module_ServiceCanNm::dummy(
    void
 ){
 }

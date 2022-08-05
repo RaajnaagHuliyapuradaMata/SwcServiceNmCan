@@ -12,11 +12,11 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define CANNM_CORE_FUNCTIONALITIES                                             \
-              FUNC(void, CANNM_CODE) dummy                         (void);     \
+#define SERVICECANNM_CORE_FUNCTIONALITIES                                             \
+              FUNC(void, SERVICECANNM_CODE) dummy                         (void);     \
 
-#define CANNM_CORE_FUNCTIONALITIES_VIRTUAL                                     \
-      virtual FUNC(void, CANNM_CODE) dummy                         (void) = 0; \
+#define SERVICECANNM_CORE_FUNCTIONALITIES_VIRTUAL                                     \
+      virtual FUNC(void, SERVICECANNM_CODE) dummy                         (void) = 0; \
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -27,7 +27,7 @@
 /******************************************************************************/
 class class_ServiceCanNm_Functionality{
    public:
-      CANNM_CORE_FUNCTIONALITIES_VIRTUAL
+      SERVICECANNM_CORE_FUNCTIONALITIES_VIRTUAL
 };
 
 /******************************************************************************/
