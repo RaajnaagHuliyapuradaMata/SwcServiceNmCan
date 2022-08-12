@@ -24,7 +24,7 @@
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
 class module_ServiceCanNm:
-      INTERFACES_EXMCALPORTED_SERVICECANNM
+      INTERFACES_EXPORTED_SERVICECANNM
       public abstract_module
    ,  public class_ServiceCanNm_Functionality
 {
