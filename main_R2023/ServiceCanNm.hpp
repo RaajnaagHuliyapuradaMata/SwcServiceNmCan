@@ -1,13 +1,13 @@
 #pragma once
 /******************************************************************************/
-/* File   : ServiceCanNm.hpp                                                         */
+/* File   : ServiceCanNm.hpp                                                  */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "ConstServiceCanNm.hpp"
+#include "infServiceCanNm_ServiceNvM_Types.hpp"
 #include "CfgServiceCanNm.hpp"
 #include "ServiceCanNm_core.hpp"
 #include "infServiceCanNm_Exp.hpp"
