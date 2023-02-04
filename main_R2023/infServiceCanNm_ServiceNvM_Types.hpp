@@ -10,9 +10,11 @@
 class NvM_BlocksRom_ServiceCanNm_Type:
       public ConstModule_TypeAbstract
 {
-/******************************************************************************/
-/* CONSTS                                                                     */
-/******************************************************************************/
+};
+
+class NvM_BlocksNv_ServiceCanNm_Type:
+      public CfgModule_TypeAbstract
+{
 };
 
 /******************************************************************************/
